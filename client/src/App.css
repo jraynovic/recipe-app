@@ -22,8 +22,8 @@
   color: #fff;
   border: 1px solid #182C4A;
   border-radius: 50%;
-  height: 30vw;
-  width: 30vw;
+  height: 25vw;
+  width: 25vw;
   filter: drop-shadow(2px 2px 2px #808080);
 }
 
@@ -32,8 +32,8 @@
   color: #fff;
   border: 1px solid #182C4A;
   border-radius: 50%;
-  height: 30vw;
-  width: 30vw;
+  height: 25vw;
+  width: 25vw;
   filter: drop-shadow(2px 2px 2px #808080);
   opacity: .7;
 }
@@ -68,4 +68,9 @@
 .activeBtn {
   background-color: #5E6C81;
   border: 1px solid #5E6C81;
+}
+.modalHeader {
+  text-align: center;
+  /* border:1px solid; */
+  width:100%
 }
