@@ -6,9 +6,9 @@ function ModalComponent( {image, ingredients, allIngredients, modalOpen,setModal
   if(modalOpen ==='Image'){
     shown = <img src={image} alt="dummyImage" width="80%" textAlign="center"/>
   }else if(modalOpen ==='Ingredients'){
-    shown = <ul>{ingredients.map(ingredient=><li>{ingredient}</li>)}</ul>
+    shown = <ul>{ingredients.map((ingredient,index)=><li key={ingredient+index}>{ingredient}</li>)}</ul>
   }else{
-    shown = <ul>{allIngredients.map(ingredient=><li>{ingredient}</li>)}</ul>
+    shown = <ul>{allIngredients.map((ingredient,index)=><li key={ingredient+index}>{ingredient}</li>)}</ul>
   }
 
   return (
