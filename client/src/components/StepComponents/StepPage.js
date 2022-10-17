@@ -42,9 +42,7 @@ const StepPage = () => {
      <Row>
       <ControlsComponent updateStepIndex={updateStepIndex}/> 
      </Row>
-      
-       
-      
+
       <Row >
         <Col>
           <Button
