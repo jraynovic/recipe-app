@@ -62,6 +62,7 @@ Endpoints:
   | description | text |
 
 
+
 Components structure
  Main Components:
   Main component
