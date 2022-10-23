@@ -73,6 +73,18 @@ recipeRouter
     }
   });
 
+recipeRouter.route('/title/:titleId')
+//get all steps by title id
+.get(async(req, res)=>{
+    const { titleId } = req.params
+    try{
+        const title = await Titles.findAll({where:{id:titleId}});
+        res.status(200)
+        res.send({title})
+    }catch(err){
+        res.send(err.message)
+    }
+})
 
 recipeRouter.route('/steps/:titleId')
 //get all steps by title id
