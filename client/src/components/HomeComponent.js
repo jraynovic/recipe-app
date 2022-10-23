@@ -15,7 +15,7 @@ const HomeComponent = () => {
   const [searchVal, setSearchVal] = useState('')
   const [results, setResults] = useState([])
   const [searched, setSearched] = useState(false)
-  
+
   useEffect(() => {
     recipeServices
       .getAllRecipes()
@@ -43,7 +43,7 @@ const HomeComponent = () => {
   const handleClick = () => {
     setSearched(true)
     recipeServices
-      .getRecipeByTitle(searchVal)
+      .searchRecipeByTitle(searchVal)
       .then(getByTitleSuccess)
       .catch(getByTitleError);
   };
@@ -70,7 +70,7 @@ const HomeComponent = () => {
           <Col xs={5} className='home-button'>
             <Button
               type="button"
-              onClick={() => history.push("select")}
+              onClick={() => history.push("select/new")}
               value="Create Recipe"
               title="Create Recipe"
             />

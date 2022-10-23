@@ -10,7 +10,6 @@ const Main = () => {
   return (
     <Switch>
       <Route path="/" exact component={HomeComponent} />
-      <Route path="/select" component={SelectComponent} />
       <Route path="/select/:titleId" component={SelectComponent} />
       <Route path="/steps/:titleId" component={StepPage} />
       <Redirect to='/'/>
